@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Informatique - Valentin BOIZET</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Police Orbitron pour le style néon/futuriste -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeInUp 1.2s cubic-bezier(.77,0,.18,1) 0.2s forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+        h3 {
+            color: #0ff0fc;
+            font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+            text-shadow: 0 0 8px #0ff0fc, 0 0 24px #ff00ea;
+            letter-spacing: 1px;
+            margin-top: 0;
+        }
+        ul {
+            color: #fff;
+            font-size: 1.1rem;
+            padding-left: 24px;
+            text-shadow: 0 0 4px #0ff0fc44;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        section {
+            border: 1.5px solid #0ff0fc44;
+            box-shadow: 0 0 16px #0ff0fc22, 0 1px 8px #ff00ea22;
+        }
+        form input, form textarea {
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        form button {
+            font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+            letter-spacing: 1px;
+        }
+        footer p {
+            font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-content" class="fade-in">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#passions">Passions</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <h1 id="accueil">Valentin BOIZET</h1>
+            <p>Développeur Informatique | Portfolio</p>
+        </header>
+        <section id="apropos">
+            <h2>À propos</h2>
+            <p>Passionné par le développement informatique, je réalise des sites web modernes et performants.</p>
+        </section>
+        <section id="passions">
+            <h2>Passions</h2>
+            <ul>
+                <li>🎮 Jeux vidéo</li>
+                <li>💻 Code</li>
+                <li>🏎️ Formule 1</li>
+                <li>🤾‍♂️ Handball</li>
+            </ul>
+        </section>
+        <section id="competences">
+            <h2>Compétences</h2>
+            <ul>
+                <li>HTML5 / CSS3</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Développement Web</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+        <section id="projets">
+            <h2>Projets</h2>
+            <div class="projet">
+                <h3>Jeu Tower Defence</h3>
+                <p>Développement d'un jeu vidéo de type "Tower Defence" : le joueur doit placer stratégiquement des tours pour défendre sa base contre des vagues d'ennemis. Ce projet met en avant la logique de programmation, la gestion d'événements et l'interface utilisateur.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2026 VB - Portfolio Informatique</p>
+        </footer>
+    </div>
+</body>
+</html>
